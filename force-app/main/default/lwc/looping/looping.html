@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <div class="slds-var-m-around_medium">
+            <lightning-button variant="brand" 
+            label="Show Data" title="Title Show Data"
+            onclick={handleClick} class="slds-var-m-left_x-small">
+            </lightning-button>
+            <template if:true={isVisible}>
+                <template for:each={Cars} for:item="car">
+                    <ul key ={car} class="slds-has-dividers_around-space">
+                        <li class="slds-item">{car}</li>
+                    </ul>
+                </template>
+               
+            </template>
+          
+        </div>
+    </lightning-card>
+</template>

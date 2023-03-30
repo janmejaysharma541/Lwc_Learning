@@ -1,0 +1,26 @@
+<template>
+<!-- <div>{hello}</div> -->
+    <lightning-card>
+        <div class="slds-var-m-around_medium">
+            <lightning-input  type="text" onkeyup={onChangeHandler}></lightning-input>
+            <div>{name} is a {title} Developer</div>
+        </div>
+    </lightning-card>
+
+    <!--@Track example here-->
+    <lightning-card title="@track property">
+        <div class="slds-var-m-around_medium">
+            <lightning-input  type="text" onkeyup={trackChangeHandler}></lightning-input>
+            <div>{address.city} is a my city</div>
+        </div>
+    </lightning-card>
+
+    <!-- Getter example here  -->
+    <lightning-card title="@Getter property">
+        <div class="slds-var-m-around_medium">
+            <div>{num1} +{num2} = {returnaddition}</div>
+            <div>the value at arr is {returnUser}</div>
+        </div>
+    </lightning-card>
+
+</template>
